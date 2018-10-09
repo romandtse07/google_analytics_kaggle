@@ -1,2 +1,5 @@
 # google_analytics_kaggle
-repo for kaggle
+
+Terms to look up:
+Social Engagement Type (came from social network?)
+
