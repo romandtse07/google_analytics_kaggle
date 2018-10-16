@@ -1,8 +1,10 @@
-# google_analytics_kaggle
+# Google Analytics Kaggle
+
+
 
 ## Differences Between Train and Test Data
 
-The training data starts on 8/1/16 and ends 8/1/17.  The test data starts off on 8/2/17.  
+The training data starts on 8/1/16 and ends 8/1/17.  The test data starts off on 8/2/17. Visitors are unique to each set; there is no opportunity to utilize visitor history, though this forces the model to be more generalizable besides. 
 
 ## Dataset Features
 
@@ -89,6 +91,8 @@ adwordsClickInfo: Includes yet another dictionary.
 campaign: Something to do with ad campaigns targetting specific item categories.
 
 campaignCode: Not included in test set, but there was only one in the training data.  Not sure which campaign it's tied to, don't care for absence in test data.  Should have just included it in columns with no information but just wanted to point out that there is potentially information for the training data, useless for the model.
+
+gclId: 
 
 isTrueDirect: 
 
