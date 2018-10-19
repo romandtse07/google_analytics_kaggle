@@ -1,5 +1,14 @@
 # Google Analytics Kaggle
 
+## Abstract
+
+Data from a [Google Analytics Kaggle Competition](https://www.kaggle.com/c/ga-customer-revenue-prediction) is analyzed first for insights into business drivers, then for creating a model with predictive power in guessing how much a visitor will spend given Google Analytics data.  User aggregated features including true directs(used in an average form) and overall bounce rate are given to a Random Forest Regressor, along with several other feature columns.  Though the scores obtained are within order of magnitude relative to previously posted kernels, the results are found unsatisfactory, especially in the context that it should make useful predictions.  Current progress in other efforts are briefly described, including a combination of classification and regression.
+
+The original premise of the project was tailored to the competition before it was discovered that the test data revenue was available through the Google Analytics demo account.  The revised version of the problem, in which we predict only on customers with past data available, is arguably more relevant, but the project must be revised to reflect this.
+
+## Project Structure
+
+The project is currently divided into three notebooks.  Files that can be reviewed are numbered in order.  Several variables and functions repeatedly called on are stored in helpers.py.  The data was originally downloaded from the Kaggle site before relocating into a local database.  In order to reproduce the work, there must be an equivalent database made in the user's computer.
 
 
 ## Differences Between Train and Test Data
