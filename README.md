@@ -4,7 +4,7 @@
 
 Data from a [Google Analytics Kaggle Competition](https://www.kaggle.com/c/ga-customer-revenue-prediction) is analyzed first for insights into business drivers, then for creating a model with predictive power in guessing how much a visitor will spend given Google Analytics data.  User aggregated features including true directs(used in an average form) and overall bounce rate are given to a Random Forest Regressor, along with several other feature columns.  Though the scores obtained are within order of magnitude relative to previously posted kernels, the results are found unsatisfactory, especially in the context that it should make useful predictions.  Current progress in other efforts are briefly described, including a combination of classification and regression.  More importantly, the difference between customers who spend very little and customers that spend nothing at all should be examined in great detail: if we consider that a majority of the store revenue comes from customers that only have less than even two transactions, we should be wary that whatever model we choose is sensitive to these subtle differences.  The work performed thus far has been biased towards separating top spenders and non-customers, but perhaps an analysis in this direction is the wrong approach for even thinking about the problem.
 
-The original premise of the project was tailored to the competition before it was discovered that the test data revenue was available through the Google Analytics demo account.  The revised version of the problem, in which we predict only on customers with past data available, is arguably more relevant, but the project must be revised to reflect this.
+The original premise of the project was tailored to the competition before it was discovered that the test data revenue was available through the Google Analytics demo account.  The revised version of the problem, in which we predict only on customers with past data available, is arguably more relevant, but the project must be changed to reflect this.
 
 ## Project Structure
 
@@ -17,7 +17,7 @@ The training data starts on 8/1/16 and ends 8/1/17.  The test data starts off on
 
 ## Dataset Features
 
-Here, we list the features available in the competition data.  Features that are further embedded in json format are discussed in the next section.
+The data comes from a Google merchandise store.  Here, we list the features available in the competition data.  Features that are further embedded in json format are discussed in the next section.
 
 channelGrouping: Pairs with medium.  
     - Direct visits are those with no referral or organic header.  It is usually assumed that these come from directly typing in the url or from clicking a bookmark, though this is not necessarily the case.  Direct has no medium.
