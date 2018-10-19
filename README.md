@@ -4,7 +4,7 @@
 
 ## Differences Between Train and Test Data
 
-The training data starts on 8/1/16 and ends 8/1/17.  The test data starts off on 8/2/17. Visitors are unique to each set; there is no opportunity to utilize visitor history, though this forces the model to be more generalizable besides. 
+The training data starts on 8/1/16 and ends 8/1/17.  The test data starts off on 8/2/17. Roughly 7,000 users appear in both training and test sets. 
 
 ## Dataset Features
 
@@ -34,7 +34,7 @@ visitStartTime: Timestamp for the time the visit started.  Stored as integer.
 
 ## JSON Columns
 
-The following features are further embedded in jsons.  We detail the contents here.  The fields that were censored and contain no information are generally omitted unless I decided to rant about it.
+The following features are further embedded in jsons.  We detail the contents here.  The fields that were censored and contain no information are generally omitted.
 
 ### Device
 
@@ -75,6 +75,8 @@ newVisits: 1 or None.  As opposed to visits, which is just 1.
 
 hits: Number of objects loaded in the session.  Kaggle says different types of hits are usually distinguished, but are grouped together here.
 
+transactionRevenue: Only available on the training data.  Units are recorded in 10^6 units of whatever monetary unit the site records.
+
 ### Traffic Source
 
 adContent: Brief description of the ad if directed from one.
@@ -92,11 +94,9 @@ campaign: Something to do with ad campaigns targetting specific item categories.
 
 campaignCode: Not included in test set, but there was only one in the training data.  Not sure which campaign it's tied to, don't care for absence in test data.  Should have just included it in columns with no information but just wanted to point out that there is potentially information for the training data, useless for the model.
 
-gclId: 
+isTrueDirect: True if either the channel grouping is direct or the same parameters are passed between this session and the last.
 
-isTrueDirect: 
-
-keyword: **Check if this is only for organic searches or something**
+keyword: Keyword for searches, organic or paid
 
 medium: See channelGrouping above
 

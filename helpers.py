@@ -10,8 +10,12 @@ with open('./pickles/field_vals.pkl', 'rb') as f:
     
 with open('./pickles/useless_fields.pkl', 'rb') as f:
     useless_fields = pickle.load(f)
-    
+
+with open('./pickles/field_dict.pkl', 'rb') as f:
+    field_dict = pickle.load(f)
+
 adwordsClickInfo_keys = ['adNetworkType', 'criteriaParameters', 'gclId', 'isVideoAd', 'page', 'slot', 'targetingCriteria']
+objects_dict = {}
 
 def dictUnravel(df):
     temp = df.copy()
