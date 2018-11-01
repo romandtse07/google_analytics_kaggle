@@ -8,7 +8,7 @@ The original premise of the project was tailored to the competition before it wa
 
 ## Project Structure
 
-The project is currently divided into three notebooks.  Files that can be reviewed are numbered in order.  Several variables and functions repeatedly called on are stored in helpers.py.  The data was originally downloaded from the Kaggle site before relocating into a local database.  In order to reproduce the work, there must be an equivalent database made in the user's computer.
+The project is currently divided into four notebooks.  The fourth notebook describes the latest effort in progress in a compounded ensemble method.  Note that the project must be cloned locally to see the bokeh cell at the moment.  Several variables and functions repeatedly called on are stored in helpers.py.  The data was originally downloaded from the Kaggle site before relocating into a local database.  In order to reproduce the work, there must be an equivalent database made in the user's computer, though pickles have been provided (a list of the local versions is provided in requirements.txt, but not all are needed for the project).
 
 
 ## Differences Between Train and Test Data
